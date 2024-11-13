@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { draftMode } from "next/headers";
+import { roboto } from '@/app/fonts/fonts';
 
 import Date from "./date";
 import CoverImage from "./cover-image";
@@ -11,9 +12,9 @@ import { CMS_NAME, CMS_URL } from "@/lib/constants";
 
 function Intro() {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        Blog.
+    <section className="w-full bg-gray-300 flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
+      {/* <h1 className={`${roboto.className} text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8`}>
+        trybotta
       </h1>
       <h2 className="text-center md:text-left text-lg mt-5 md:pl-8">
         A statically generated blog example using{" "}
@@ -31,7 +32,7 @@ function Intro() {
           {CMS_NAME}
         </a>
         .
-      </h2>
+      </h2> */}
     </section>
   );
 }
@@ -83,7 +84,8 @@ export default async function Page() {
   const morePosts = allPosts.slice(1);
 
   return (
-    <div className="container mx-auto px-5">
+    // <div className="container mx-auto px-5">
+    <div className="">
       <Intro />
       {heroPost && (
         <HeroPost
