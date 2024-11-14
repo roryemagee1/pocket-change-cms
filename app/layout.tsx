@@ -51,9 +51,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
-        <section className="min-h-screen bg-[fuchsia]">
+        <section className="min-h-screen bg-[#F4F5F6]">
           <Header />
-          <main>{children}</main>
+          <main className="px-[32px]">{children}</main>
           <Footer />
         </section>
       </body>

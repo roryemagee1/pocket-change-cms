@@ -8,6 +8,8 @@
   --ibottagray: #292f36;
   --ibottapink: #D52267;
   --ibottagreen: #0A7986;
+  --ibottawhite: #F4F5F6;
+  --ibottacharcoal: #2A2F35;
 }
 
 @media (prefers-color-scheme: dark) {

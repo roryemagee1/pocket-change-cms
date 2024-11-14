@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { draftMode } from "next/headers";
 import { roboto } from '@/app/fonts/fonts';
+import Image from "next/image";
 
 import Date from "./date";
 import CoverImage from "./cover-image";
@@ -87,6 +88,13 @@ export default async function Page() {
     // <div className="container mx-auto px-5">
     <div className="">
       <Intro />
+      <img
+        src="/pocket-change.svg"
+        width={600}
+        height={119}
+        alt="Pocket Change"
+        className="mx-auto py-8"
+      />
       {heroPost && (
         <HeroPost
           title={heroPost.title}
